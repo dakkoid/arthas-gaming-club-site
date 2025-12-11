@@ -150,6 +150,61 @@ function setupAnimations() {
   animatedBlocks.forEach((block) => observer.observe(block));
 }
 
+// Подсветка активного пункта меню
+function setupActiveNav() {
+  const sections = document.querySelectorAll('main section[id]');
+  const navLinks = document.querySelectorAll('.nav__link');
+
+  if (!sections.length || !navLinks.length) return;
+
+  const map = new Map();
+  navLinks.forEach((link) => {
+    const id = link.getAttribute('href')?.replace('#', '');
+    if (id) map.set(id, link);
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const id = entry.target.getAttribute('id');
+        if (!id) return;
+
+        const link = map.get(id);
+        if (!link) return;
+
+        if (entry.isIntersecting) {
+          navLinks.forEach((l) => l.classList.remove('nav__link--active'));
+          link.classList.add('nav__link--active');
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+}
+
+// Кнопка наверх
+function setupBackToTop() {
+  const btn = document.querySelector('.back-to-top');
+  if (!btn) return;
+
+  function onScroll() {
+    if (window.scrollY > 400) {
+      btn.classList.add('back-to-top--visible');
+    } else {
+      btn.classList.remove('back-to-top--visible');
+    }
+  }
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  window.addEventListener('scroll', onScroll);
+  onScroll();
+}
+
 // Инициализация после загрузки DOM
 function init() {
   setupSmoothScroll();
@@ -157,6 +212,8 @@ function init() {
   setupForm();
   setupModal();
   setupAnimations();
+  setupActiveNav();
+  setupBackToTop();
 }
 
 document.addEventListener('DOMContentLoaded', init);
