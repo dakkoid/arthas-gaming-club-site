@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthas Gaming Club — Турниры</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/light-theme.css">
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-label="Загрузка">
+    <div class="spinner"></div>
+  </div>
+  <header>
+    <div class="wrapper topbar">
+      <div class="logo">Arthas <span>Gaming</span> Club</div>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="club.html">О клубе</a>
+        <a href="tournaments.html">Турниры</a>
+        <a href="cafe.html">Кафе</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <div class="controls">
+        <button class="btn-icon" id="themeToggle" aria-label="Переключить тему">☾</button>
+        <div class="burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main data-page="tournaments">
+    <section class="wrapper" style="padding-top: 60px;">
+      <div class="section-title">
+        <h1>Турниры</h1>
+        <p>Расписание турниров и регистрация</p>
+      </div>
+      <div class="card card--accent js-animate">
+        <h3>До ближайшего турнира</h3>
+        <div id="countdown" class="countdown">Загрузка...</div>
+        <p class="muted">Обновляется каждую секунду.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrapper">
+        <div class="section-title"><h2>Расписание</h2><p>Все турниры, которые запланированы в клубе</p></div>
+        <div id="tournamentsContainer" class="grid columns-3"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">© 2024 Arthas Gaming Club — неоновые рейды 24/7.</div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Наверх">↑</button>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <button class="modal-close" aria-label="Закрыть">×</button>
+      <h3 class="modal-title">Заявка на турнир</h3>
+      <p class="modal-description">Заполните форму, и мы подтвердим регистрацию.</p>
+      <form id="registrationForm" class="form" style="margin-top: 12px;">
+        <input class="input" type="text" name="name" placeholder="Имя" required>
+        <input class="input" type="text" name="nick" placeholder="Ник" required>
+        <input class="input" type="text" name="contacts" placeholder="Контакты" required>
+        <input type="hidden" name="tournament">
+        <div class="form-message"></div>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+body.theme-light {
+  --bg-main: #f4f6fb;
+  --bg-secondary: #ffffff;
+  --text: #0c1020;
+  --muted: #445;
+  --border: rgba(12,16,32,0.08);
+  --glass: rgba(255,255,255,0.8);
+  background-image: linear-gradient(135deg, #f8fbff, #edf1ff), var(--bg-glow), var(--noise);
+  color: #0c1020;
+}
+
+body.theme-light header { background: rgba(255,255,255,0.86); }
+body.theme-light .card, body.theme-light .order-box, body.theme-light .map-placeholder { background: #fff; }
+body.theme-light .nav a:hover, body.theme-light .nav a.is-active { box-shadow: 0 0 0 1px rgba(124,91,255,0.2); }
