@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthas Gaming Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="logo">Arthas Gaming Club</div>
+      <nav class="nav" aria-label="Главная навигация">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#hero">Главная</a></li>
+          <li><a class="nav__link" href="#about">О клубе</a></li>
+          <li><a class="nav__link" href="#pricing">Тарифы</a></li>
+          <li><a class="nav__link" href="#rigs">ПК и зоны</a></li>
+          <li><a class="nav__link" href="#events">Турниры</a></li>
+          <li><a class="nav__link" href="#reviews">Отзывы</a></li>
+          <li><a class="nav__link" href="#booking">Бронь</a></li>
+          <li><a class="nav__link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero__content animate">
+        <div class="hero__text">
+          <p class="hero__badge">Неоновый киберспорт в сердце города</p>
+          <h1 class="hero__title">Arthas Gaming Club</h1>
+          <p class="hero__subtitle">Твой портал в мир киберспорта и дружеских побед</p>
+          <div class="hero__actions">
+            <a class="btn" href="#booking">Забронировать место</a>
+            <a class="btn btn--ghost" href="#pricing">Тарифы</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__glow"></div>
+          <div class="hero__card">
+            <span class="hero__label">24/7 online</span>
+            <p>Топовые конфигурации, 240 Гц, кресла для долгих сессий и отдельная стримерская.</p>
+            <span class="hero__cta">Добро пожаловать в Arthas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="about">
+      <div class="container animate">
+        <div class="section__header">
+          <h2>О клубе</h2>
+          <p>Создали место, где железо не подводит, интернет летает, а атмосфера заряжает на победу.</p>
+        </div>
+        <div class="about">
+          <div class="about__desc">
+            <p>В клубе доступны мощные ПК, быстрый гигабитный интернет и удобные кресла с поддержкой спины. Мы заботимся о комфорте игроков и предлагаем напитки, закуски и уютные зоны отдыха.</p>
+          </div>
+          <ul class="about__list">
+            <li class="about__item">Топовое железо последнего поколения</li>
+            <li class="about__item">240 Гц мониторы и профессиональные периферия</li>
+            <li class="about__item">Отдельная зона консолей и лаунж</li>
+            <li class="about__item">Стримерская комната с акустической обработкой</li>
+            <li class="about__item">Командные столы для буткемпов</li>
+            <li class="about__item">Уютная атмосфера и заботливые админы</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="container animate">
+        <div class="section__header">
+          <h2>Пакеты и тарифы</h2>
+          <p>Выбирай формат игры: соло, с друзьями или ночной забег.</p>
+        </div>
+        <div class="cards pricing">
+          <article class="card pricing__card">
+            <h3>Casual</h3>
+            <p class="pricing__price">350 ₽ / час</p>
+            <p class="pricing__desc">Для расслабленных сессий и знакомства с клубом.</p>
+            <ul class="pricing__list">
+              <li>2 часа игры в день</li>
+              <li>Доступ к лаунжу и напиткам</li>
+              <li>Скидка 10% на консольную зону</li>
+            </ul>
+          </article>
+          <article class="card pricing__card pricing__card--highlight">
+            <h3>Ranked</h3>
+            <p class="pricing__price">290 ₽ / час</p>
+            <p class="pricing__desc">Для ранкед-пушеров и тренировок с командой.</p>
+            <ul class="pricing__list">
+              <li>От 4 часов игры в день</li>
+              <li>Приоритетная посадка</li>
+              <li>Анти-tilt зона и ускоренная поддержка</li>
+            </ul>
+          </article>
+          <article class="card pricing__card">
+            <h3>Night Raid</h3>
+            <p class="pricing__price">1200 ₽ / ночь</p>
+            <p class="pricing__desc">Ночные рейды для рейдеров и бустеров.</p>
+            <ul class="pricing__list">
+              <li>С 23:00 до 7:00</li>
+              <li>Неограниченное время игры</li>
+              <li>Энергетики и пицца по спеццене</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="rigs">
+      <div class="container animate">
+        <div class="section__header">
+          <h2>ПК и зоны</h2>
+          <p>Подобрали конфигурации под любой сценарий: от соло каток до стримов.</p>
+        </div>
+        <div class="cards rigs">
+          <article class="card rigs__card">
+            <div class="card__image" aria-hidden="true">
+              <img src="/img/pro-zone.jpg" alt="" loading="lazy">
+            </div>
+            <div class="card__content">
+              <h3>Pro зона</h3>
+              <ul>
+                <li>CPU: Intel i7 / Ryzen 7</li>
+                <li>GPU: RTX 4070 Super</li>
+                <li>RAM: 32 ГБ DDR5</li>
+                <li>Монитор: 27" 240 Гц</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card rigs__card">
+            <div class="card__image" aria-hidden="true">
+              <img src="/img/team-zone.jpg" alt="" loading="lazy">
+            </div>
+            <div class="card__content">
+              <h3>Командная зона</h3>
+              <ul>
+                <li>CPU: Intel i5 / Ryzen 5</li>
+                <li>GPU: RTX 4060</li>
+                <li>RAM: 16 ГБ DDR5</li>
+                <li>Монитор: 24" 240 Гц</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card rigs__card">
+            <div class="card__image" aria-hidden="true">
+              <img src="/img/stream-zone.jpg" alt="" loading="lazy">
+            </div>
+            <div class="card__content">
+              <h3>Стримерская зона</h3>
+              <ul>
+                <li>CPU: Ryzen 9 / Intel i9</li>
+                <li>GPU: RTX 4080</li>
+                <li>RAM: 64 ГБ DDR5</li>
+                <li>Монитор: 32" 165 Гц + 27" 144 Гц</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card rigs__card">
+            <div class="card__image" aria-hidden="true">
+              <img src="/img/console-zone.jpg" alt="" loading="lazy">
+            </div>
+            <div class="card__content">
+              <h3>Консольная лаунж-зона</h3>
+              <ul>
+                <li>PlayStation 5 / Xbox Series X</li>
+                <li>OLED 55" 120 Гц</li>
+                <li>Премиум гарнитуры</li>
+                <li>Кресла-мешки и барная стойка</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="container animate">
+        <div class="section__header">
+          <h2>Турниры и мероприятия</h2>
+          <p>Регулярные турниры, ивенты от партнеров и просмотры киберспортивных финалов.</p>
+        </div>
+        <div class="cards events">
+          <article class="card events__card">
+            <h3>Valorant Clash</h3>
+            <p>5x5 формат, призовой фонд 50 000 ₽, квалификация каждую пятницу.</p>
+            <span class="tag">Еженедельно</span>
+          </article>
+          <article class="card events__card">
+            <h3>CS2 Open Cup</h3>
+            <p>Двойная сетка, анти-чит контроль, финал на большой сцене клуба.</p>
+            <span class="tag">Раз в месяц</span>
+          </article>
+          <article class="card events__card">
+            <h3>Dota 2 Night</h3>
+            <p>Ночные шоу-матчи, кастеры из комьюнити и пицца-пати для зрителей.</p>
+            <span class="tag">Ночные запуски</span>
+          </article>
+        </div>
+        <div class="section__actions">
+          <a class="btn" href="#contacts">Узнать расписание</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="reviews">
+      <div class="container animate">
+        <div class="section__header">
+          <h2>Отзывы игроков</h2>
+          <p>Комьюнити — ядро клуба. Мы прислушиваемся к каждому.</p>
+        </div>
+        <div class="cards reviews">
+          <article class="card review">
+            <div class="review__header">
+              <h3>@ShadowFox</h3>
+              <span class="tag">Valorant</span>
+            </div>
+            <p class="review__text">“Чистый звук, отклик идеальный, кресла — как облака. Затестил Ranked тариф, зашло!”</p>
+          </article>
+          <article class="card review">
+            <div class="review__header">
+              <h3>@CryoMage</h3>
+              <span class="tag">Dota 2</span>
+            </div>
+            <p class="review__text">“Админы понимают, что нужно игрокам. Делали буткемп — все вопросы закрыли без лишних слов.”</p>
+          </article>
+          <article class="card review">
+            <div class="review__header">
+              <h3>@NovaStream</h3>
+              <span class="tag">Стриминг</span>
+            </div>
+            <p class="review__text">“Отдельная комната для стримов — топ. Тихо, удобно, готовый сетап с освещением.”</p>
+          </article>
+          <article class="card review">
+            <div class="review__header">
+              <h3>@NightWalker</h3>
+              <span class="tag">CS2</span>
+            </div>
+            <p class="review__text">“Ночные сессии на Night Raid — лучший способ апнуть скилл. Интернет летает, атмосфера дружелюбная.”</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="booking">
+      <div class="container animate">
+        <div class="section__header">
+          <h2>Бронирование места</h2>
+          <p>Заполни форму — администратор свяжется с тобой для подтверждения.</p>
+        </div>
+        <form class="form" id="booking-form" novalidate>
+          <div class="form__group">
+            <label for="name">Имя *</label>
+            <input type="text" id="name" name="name" required>
+            <small class="form__error"></small>
+          </div>
+          <div class="form__group">
+            <label for="phone">Телефон *</label>
+            <input type="tel" id="phone" name="phone" required>
+            <small class="form__error"></small>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="date">Дата *</label>
+              <input type="date" id="date" name="date" required>
+              <small class="form__error"></small>
+            </div>
+            <div class="form__group">
+              <label for="time">Время *</label>
+              <input type="time" id="time" name="time" required>
+              <small class="form__error"></small>
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="tariff">Тариф *</label>
+            <select id="tariff" name="tariff" required>
+              <option value="">Выберите тариф</option>
+              <option value="casual">Casual</option>
+              <option value="ranked">Ranked</option>
+              <option value="night">Night Raid</option>
+            </select>
+            <small class="form__error"></small>
+          </div>
+          <div class="form__group">
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Пожелания по месту или периферии"></textarea>
+            <small class="form__error"></small>
+          </div>
+          <button type="submit" class="btn form__submit">Отправить заявку</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contacts">
+      <div class="container animate">
+        <div class="section__header">
+          <h2>Контакты</h2>
+          <p>Мы находимся в самом центре — приезжай с друзьями или пиши в мессенджеры.</p>
+        </div>
+        <div class="contacts">
+          <div class="contacts__info">
+            <p><strong>Адрес:</strong> г. Москва, ул. Киберспортсменов, 7 (м. Бауманская)</p>
+            <p><strong>Телефон:</strong> <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+            <p><strong>Telegram:</strong> <a href="#">@arthasclub</a></p>
+            <p><strong>Discord:</strong> <a href="#">discord.gg/arthas</a></p>
+            <p><strong>Часы работы:</strong> Круглосуточно, без выходных</p>
+          </div>
+          <div class="contacts__map" aria-label="Заглушка карты">Здесь будет карта</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <p>© 2025 Arthas Gaming Club</p>
+      <div class="footer__links">
+        <a href="#">Политика</a>
+        <a href="#">Правила клуба</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="success-modal" aria-hidden="true">
+    <div class="modal__overlay"></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <h3 id="modal-title">Заявка отправлена</h3>
+      <p>Мы свяжемся с вами в ближайшее время!</p>
+      <button class="btn modal__close" type="button">Ок</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
