@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthas Gaming Club — Контакты</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/light-theme.css">
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-label="Загрузка">
+    <div class="spinner"></div>
+  </div>
+  <header>
+    <div class="wrapper topbar">
+      <div class="logo">Arthas <span>Gaming</span> Club</div>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="club.html">О клубе</a>
+        <a href="tournaments.html">Турниры</a>
+        <a href="cafe.html">Кафе</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <div class="controls">
+        <button class="btn-icon" id="themeToggle" aria-label="Переключить тему">☾</button>
+        <div class="burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main data-page="contacts">
+    <section class="wrapper" style="padding-top: 60px;">
+      <div class="section-title"><h1>Контакты</h1><p>Свяжитесь с нами удобным способом</p></div>
+      <div class="contact-card">
+        <div class="card js-animate">
+          <h3>Адрес</h3>
+          <p class="muted">Москва, ул. Киберспортсменов, 7к2</p>
+          <p><a href="tel:+74950000000">+7 (495) 000-00-00</a></p>
+          <p><a href="mailto:raid@arthas.club">raid@arthas.club</a></p>
+        </div>
+        <div class="card js-animate">
+          <h3>Соцсети</h3>
+          <p><a href="https://t.me" target="_blank">Telegram</a></p>
+          <p><a href="https://discord.com" target="_blank">Discord</a></p>
+          <p><a href="https://vk.com" target="_blank">VK</a></p>
+        </div>
+        <div class="map-placeholder js-animate">
+          <p>Здесь будет карта</p>
+          <a class="btn btn-ghost" href="https://yandex.ru/maps" target="_blank">Открыть в Яндекс.Картах</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrapper">
+        <div class="section-title"><h2>Обратная связь</h2><p>Оставьте сообщение — мы ответим</p></div>
+        <form id="feedbackForm" class="card form">
+          <div class="form-row">
+            <input class="input" type="text" name="name" placeholder="Имя" required>
+            <input class="input" type="email" name="email" placeholder="Email" required>
+          </div>
+          <input class="input" type="text" name="subject" placeholder="Тема" required>
+          <textarea class="input" name="message" rows="4" placeholder="Сообщение" required></textarea>
+          <div class="form-message"></div>
+          <button class="btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">© 2024 Arthas Gaming Club — неоновые рейды 24/7.</div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Наверх">↑</button>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <button class="modal-close" aria-label="Закрыть">×</button>
+      <h3 class="modal-title">Сообщение отправлено</h3>
+      <p class="modal-description">Мы ответим на вашу почту.</p>
+    </div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

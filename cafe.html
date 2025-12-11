@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthas Gaming Club — Кафе и бар</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/light-theme.css">
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-label="Загрузка">
+    <div class="spinner"></div>
+  </div>
+  <header>
+    <div class="wrapper topbar">
+      <div class="logo">Arthas <span>Gaming</span> Club</div>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="club.html">О клубе</a>
+        <a href="tournaments.html">Турниры</a>
+        <a href="cafe.html">Кафе</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <div class="controls">
+        <button class="btn-icon" id="themeToggle" aria-label="Переключить тему">☾</button>
+        <div class="burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main data-page="cafe">
+    <section class="wrapper" style="padding-top: 60px;">
+      <div class="section-title"><h1>Кафе/бар</h1><p>Неоновые напитки и горячие закуски, подача прямо к месту</p></div>
+      <div class="card js-animate">
+        <h3>Фильтр по категориям</h3>
+        <div id="menuFilters" class="menu-filters"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrapper grid columns-3" id="menuItems"></div>
+    </section>
+
+    <section>
+      <div class="wrapper split">
+        <div class="card js-animate">
+          <h3>Сервис</h3>
+          <p class="muted">Заказ через QR, быстрый вынос в игровые залы, постоплата на стойке или через приложение.</p>
+          <ul class="muted">
+            <li>Авторские лимонады и кофе</li>
+            <li>Пицца в печи и снеки</li>
+            <li>Бар безалкогольных коктейлей</li>
+          </ul>
+        </div>
+        <div class="order-box js-animate">
+          <h3>Ваш заказ</h3>
+          <ul id="orderList"></ul>
+          <div class="order-summary">
+            <span>Итого:</span>
+            <strong id="orderTotal">0 ₽</strong>
+          </div>
+          <button class="btn btn-ghost" id="clearOrder" style="margin-top: 10px;">Очистить заказ</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">© 2024 Arthas Gaming Club — неоновые рейды 24/7.</div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Наверх">↑</button>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <button class="modal-close" aria-label="Закрыть">×</button>
+      <h3 class="modal-title">Заказ</h3>
+      <p class="modal-description">Добавлено в заказ.</p>
+    </div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

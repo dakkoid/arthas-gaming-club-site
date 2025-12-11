@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthas Gaming Club — О клубе</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/light-theme.css">
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-label="Загрузка">
+    <div class="spinner"></div>
+  </div>
+  <header>
+    <div class="wrapper topbar">
+      <div class="logo">Arthas <span>Gaming</span> Club</div>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="club.html">О клубе</a>
+        <a href="tournaments.html">Турниры</a>
+        <a href="cafe.html">Кафе</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <div class="controls">
+        <button class="btn-icon" id="themeToggle" aria-label="Переключить тему">☾</button>
+        <div class="burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main data-page="club">
+    <section class="wrapper split" style="padding-top: 60px;">
+      <div>
+        <h1 class="js-animate">О клубе</h1>
+        <p class="muted js-animate">Arthas Gaming Club — пространство для киберспортсменов, стримеров и тех, кто ценит атмосферу. Три зала, студия, консольный лаунж и кафе с авторскими напитками.</p>
+        <div class="grid columns-2">
+          <div class="card js-animate"><h3>Тихая вентиляция</h3><p class="muted">Потоки воздуха распределены так, чтобы не шуметь и не мешать микрофонам.</p></div>
+          <div class="card js-animate"><h3>Стабильный пинг</h3><p class="muted">Собственный uplink, резервирование каналов и QoS для соревновательных игр.</p></div>
+        </div>
+      </div>
+      <div class="card js-animate">
+        <h3>Быстрые факты</h3>
+        <ul class="muted">
+          <li>36 топовых игровых мест</li>
+          <li>3 стримерских комнаты</li>
+          <li>Кастомные кресла и свет</li>
+          <li>Партнёрства с лигами и студиями</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="zones" id="zones">
+      <div class="wrapper">
+        <div class="section-title"><h2>Наши зоны</h2><p>Готовы к турнирам, буткемпам и посиделкам.</p></div>
+        <div class="grid columns-3">
+          <article class="card js-animate"><div class="card-image"></div><h3>Bootcamp</h3><p class="muted">Закрытая зона с доской тактики и отдельным роутером.</p></article>
+          <article class="card js-animate"><div class="card-image"></div><h3>Streamer Pro</h3><p class="muted">Звукоизоляция, карты захвата, световые панели и chroma key.</p></article>
+          <article class="card js-animate"><div class="card-image"></div><h3>VIP</h3><p class="muted">Сервис из бара, диваны, настройка освещения под твой стиль.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tariffs">
+      <div class="wrapper">
+        <div class="section-title"><h2>Тарифы</h2><p>Подбирай под формат игры</p></div>
+        <div class="grid columns-4">
+          <article class="card js-animate"><h3>Casual</h3><p class="muted">Рабочие дни 10:00–18:00</p><p class="prize">150 ₽/час</p></article>
+          <article class="card js-animate"><h3>Ranked</h3><p class="muted">Вечерние прайм таймы</p><p class="prize">240 ₽/час</p></article>
+          <article class="card js-animate"><h3>Night Raid</h3><p class="muted">Ночью 00:00–08:00</p><p class="prize">890 ₽/ночь</p></article>
+          <article class="card js-animate"><h3>Team Bootcamp</h3><p class="muted">5 мест + комната</p><p class="prize">4200 ₽/день</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faqSection">
+      <div class="wrapper">
+        <div class="section-title"><h2>FAQ</h2><p>Ответы на частые вопросы</p></div>
+        <div id="faq" class="grid columns-2"></div>
+      </div>
+    </section>
+
+    <section id="booking">
+      <div class="wrapper">
+        <div class="section-title"><h2>Бронирование</h2><p>Заполните форму, мы свяжемся и подтвердим время</p></div>
+        <form class="card form" id="bookingForm">
+          <div class="form-row">
+            <input class="input" name="name" type="text" placeholder="Имя" required>
+            <input class="input" name="phone" type="tel" placeholder="Телефон" required>
+          </div>
+          <div class="form-row">
+            <input class="input" name="date" type="date" required>
+            <input class="input" name="time" type="time" required>
+          </div>
+          <select class="input" name="tariff">
+            <option>Casual</option>
+            <option>Ranked</option>
+            <option>Night Raid</option>
+            <option>Team Bootcamp</option>
+          </select>
+          <textarea class="input" name="comment" rows="3" placeholder="Комментарий"></textarea>
+          <div class="form-message"></div>
+          <button class="btn" type="submit">Отправить бронь</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">© 2024 Arthas Gaming Club — неоновые рейды 24/7.</div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Наверх">↑</button>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <button class="modal-close" aria-label="Закрыть">×</button>
+      <h3 class="modal-title">Бронь отправлена</h3>
+      <p class="modal-description">Мы свяжемся с вами.</p>
+    </div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

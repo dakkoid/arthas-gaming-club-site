@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop stop-color="#7c5bff" offset="0%"/>
+      <stop stop-color="#3de0d0" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="#0f111a"/>
+  <circle cx="200" cy="160" r="140" fill="url(#g)" opacity="0.3"/>
+  <circle cx="600" cy="340" r="160" fill="url(#g)" opacity="0.26"/>
+  <text x="50%" y="50%" fill="#e8ecff" font-size="42" font-family="Manrope, sans-serif" text-anchor="middle" opacity="0.9">Arthas Zone</text>
+</svg>
